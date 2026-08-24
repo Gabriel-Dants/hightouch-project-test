@@ -21,7 +21,7 @@ I wanted to test-drive Hightouch's Reverse ETL approach end-to-end, from warehou
 
 ```
 Kaggle (CSV) → Snowflake (staging + enrichment) → SQL Views (use cases)
-→ Hightouch (Reverse ETL) → HubSpot / Salesforce / engagement tools
+→ Hightouch (Reverse ETL) → HubSpot (Engagement Tool)
 ```
 
 - **Data Warehouse:** Snowflake
@@ -73,7 +73,7 @@ Modeling notes applied across all views:
 
 ## 🔌 Activation via Hightouch
 
-The views were connected as *models* in Hightouch and synced to CRM/engagement destinations (HubSpot, Salesforce, among others), mapping the dynamic fields (lead origin, state, category) as *traits*/attributes.
+The views were connected as *models* in Hightouch and synced to CRM/engagement destinations (HubSpot), mapping the dynamic fields (lead origin, state, category) as *traits*/attributes.
 
 > Sync configs and screenshots in [`/src`](./src)
 
